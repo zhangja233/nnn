@@ -1,6 +1,6 @@
 VERSION = $(shell grep -m1 VERSION $(SRC) | cut -f 2 -d'"')
 
-PREFIX ?= /usr/local
+PREFIX ?= $(HOME)/.local
 MANPREFIX ?= $(PREFIX)/share/man
 DESKTOPPREFIX ?= $(PREFIX)/share/applications
 DESKTOPICONPREFIX ?= $(PREFIX)/share/icons/hicolor
